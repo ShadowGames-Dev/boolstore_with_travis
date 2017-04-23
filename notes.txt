@@ -1,0 +1,19 @@
+Steps for adding Travis suport
+
+1. Create Github repo
+    Add to remot repos in local repo
+2. From travis.org:
+     Sync with GitHub
+     Enable webhook between repo and Travis
+
+3. In local repo:
+        Add Gemfile 
+        Create .travis.yml
+             Add basic entries
+        Add secure DB environment variable using
+            $ travis encrypt DB=test/integration/books.sqlite --add
+         
+Check .git/config for
+
+travis]
+	slug = diarmuidoconnor/bookstore_with_travis
