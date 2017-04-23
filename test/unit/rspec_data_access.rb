@@ -62,6 +62,13 @@ describe DataAccess do
       end
   end
 
+  describe "ISBN Search" do
+       before(:each) do
+          dBase = Sequel.sqlite(ENV['DB'] )
+          @sqlp = SQLitePersistence.new dBase
+       end
+  end
+
   describe '#authorSearch' do
         before(:each) do
            @a1 = 'author1'
